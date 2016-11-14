@@ -1,0 +1,9 @@
+{% extends 'Counter/base.html' %}
+{% block content %}
+{% csrf_token %}
+  <div id="content">
+    <h2>Upload an image!</h2>
+    <input type="file" id="image-upload" accept="image/*"/>
+    <div id="image-results"></div>
+  </div>
+{% endblock content %}
